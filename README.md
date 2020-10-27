@@ -5,6 +5,7 @@
 
 
 # Banco de dados
+
 <br>
 
 <p>Bancos de dados ou bases de dados são conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas.</p>
@@ -13,7 +14,24 @@
 <p>De forma simplificada, podemos dizer que um banco de dados é uma coleção de dados que devem ser armazenados ou persistidos. Em um banco de dados, as informações são gravadas em memórias de longo prazo e mesmo que o computador seja desligado, os dados não serão perdidos. Dizemos que esses dados persistem.</p>
 <p>Existe uma distinção entre banco de dados e sistema gerenciador do banco de dados (SGBD). 
 <p>Um Sistema de Gerenciamento de Banco de Dados (SGBD) é o conjunto de softwares responsáveis pelo gerenciamento de um banco de dados. Seu principal objetivo é retirar da aplicação cliente a responsabilidade de gerenciar o acesso, a persistência, a manipulação e a organização dos dados.</p>
-<p>Os Sistemas de Gerenciamento de Banco de Dados são utilizados para gerir as estruturas de armazenamento dos dados, permitindo a realização de manipulações, bem como o controle das permissões de utilização dos bancos de dados.</p>
+
+<br>
+
+# Entidades e Atributos
+
+<br>
+
+<p>Uma entidade é uma representação de um conjunto de informações sobre determinado conceito. Toda entidade possui atributos, que são as informações que referenciam a entidade. Uma entidade é representada por um conjunto de atributos.</p>
+<p>Para saber se determinado conceito pode ser uma entidade ou não, basta se  perguntar: " Desejo armazenar quais informações sobre este conceito? ". Se houverem informações a serem armazenadas, você tem uma entidade. </p>
+<p>Vamos apresentar dois exemplos. Primeiro exemplo, desejamos armazenar os seguintes dados do livro: Título, Autor, Editora, Ano, Edição e Volume. Logo , temos a entidade Livro.</p>
+<p>Desejamos armazenar os seguintes dados sobre a pessoa: Nome, Data de nascimento, Filiação, Sexo, RG, CPF e Grau de escolaridade. Então, temos a entidade pessoa. </p>
+
+<br>
+
+# Sistemas de Gerenciamento de Banco de Dados
+
+<br>
+<p>Os SGBDs são utilizados para gerir as estruturas de armazenamento dos dados, permitindo a realização de manipulações, bem como o controle das permissões de utilização dos bancos de dados.</p>
 <p>Todas as organizações possuem quantidades cada vez maiores de dados e informações a serem armazenadas. Porém, a manipulação dessas informações tornou-se impossível de ser realizada manualmente, pois sua utilização, além de demorada devido a catalogação dos dados, é passível de erros, principalmente ocasionados pelo desgaste do operador em conseguir resgatar informações requisitadas.</p>
 <p>Qualquer empresa que pretenda garantir um controle efetivo sobre todo o seu negócio tem que recorrer a sistemas de gestão de bases de dados. Nesse sentido, torna-se mais fácil encontrar a informação em uma base de dados baseada em uma tecnologia mais confiável - o computador. </p>
 
@@ -36,6 +54,13 @@
 <p>Um registro no MongoDB é um documento, que é uma estrutura de dados composta de pares de campo e valor.</p>
 <p>Os documentos do MongoDB são semelhantes aos objetos JSON. O MongoDB armazena documentos em coleções.</p>
 <p>O MongoDB oferece uma versão Community totamente gratuita e disponível para Windows, Linux e MacOS.</p>
+
+<br>
+
+## Instalação e Tutorial
+
+<br>
+
 <p>A instalação do MongoDB Community versão gratuita e atualizada para Windows pode ser feita na url abaixo:
 
 [Download do MongoDB Community]( https://www.mongodb.com/try/download/community )
@@ -44,7 +69,9 @@
 
 [Instalando e configurando o MongoDB no Windows](https://www.youtube.com/watch?v=skK5xj-CK-Q)
 
-### Comandos utilizados no MongoDB no Prompt de Comando (cmd) :
+<br>
+
+## Comandos utilizados no MongoDB no Prompt de Comando (cmd) :
 
 - Digite : mongod - no terminal/prompt de comando (cmd) para subir o servidor .
 
@@ -64,7 +91,7 @@
 
 <p>Estes dois terminais deverão estar abertos simultâneamente. As imagens mostram o que deverá estar sendo exibido nos prompts de comandos para validar a instalação exitosa.</p>
 
-### Comandos do MongoDB :
+## Comandos do MongoDB :
 <br>
 <p>1. Para criação de um Banco de dados:</p> 
 
