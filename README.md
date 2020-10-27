@@ -26,6 +26,10 @@
 <p>Vamos apresentar dois exemplos. Primeiro exemplo, desejamos armazenar os seguintes dados do livro: Título, Autor, Editora, Ano, Edição e Volume. Logo , temos a entidade Livro.</p>
 <p>Desejamos armazenar os seguintes dados sobre a pessoa: Nome, Data de nascimento, Filiação, Sexo, RG, CPF e Grau de escolaridade. Então, temos a entidade pessoa. </p>
 
+[Draw io](https://app.diagrams.net/) 
+
+<p>Software online que permite criar um diagrama Entidade - Relacionamento de maneira simples e intuitiva.</p>
+
 <br>
 
 # Sistemas de Gerenciamento de Banco de Dados
@@ -173,7 +177,7 @@ mais amigável:</p>
 
 <br>
 
-<p>Para informações sobre mais comandos ou informações mais detalhadas e completas, consulte a bíblia abaixo :</p>
+<p>Para mais informações sobre comandos, consulte a bíblia no link abaixo :</p>
 
 [Manual do MongoDB 4.4]( https://docs.mongodb.com/manual/ )
 
