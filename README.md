@@ -13,6 +13,7 @@
 <p>De forma simplificada, podemos dizer que um banco de dados é uma coleção de dados que devem ser armazenados ou persistidos. Em um banco de dados, as informações são gravadas em memórias de longo prazo e mesmo que o computador seja desligado, os dados não serão perdidos. Dizemos que esses dados persistem.</p>
 <p>Existe uma distinção entre banco de dados e sistema gerenciador do banco de dados (SGBD). 
 <p>Um Sistema de Gerenciamento de Banco de Dados (SGBD) é o conjunto de softwares responsáveis pelo gerenciamento de um banco de dados. Seu principal objetivo é retirar da aplicação cliente a responsabilidade de gerenciar o acesso, a persistência, a manipulação e a organização dos dados.</p>
+<p>Os Sistemas de Gerenciamento de Banco de Dados são utilizados para gerir as estruturas de armazenamento dos dados, permitindo a realização de manipulações, bem como o controle das permissões de utilização dos bancos de dados.</p>
 <p>Todas as organizações possuem quantidades cada vez maiores de dados e informações a serem armazenadas. Porém, a manipulação dessas informações tornou-se impossível de ser realizada manualmente, pois sua utilização, além de demorada devido a catalogação dos dados, é passível de erros, principalmente ocasionados pelo desgaste do operador em conseguir resgatar informações requisitadas.</p>
 <p>Qualquer empresa que pretenda garantir um controle efetivo sobre todo o seu negócio tem que recorrer a sistemas de gestão de bases de dados. Nesse sentido, torna-se mais fácil encontrar a informação em uma base de dados baseada em uma tecnologia mais confiável - o computador. </p>
 
@@ -23,7 +24,7 @@
 - Oracle;<br>
 - MongoDB;<br>
 - MariaDB;<br>
-- SQL-Server, dentre outros. <br>
+- Microsoft SQL Server, dentre outros. <br>
 <br>
 
 ![Imagem MongoDB](./imagens_banco_dados/mongodb.png)
@@ -75,7 +76,7 @@
 
 <p>3. Para criar uma collection :</p>
 
-- <p>db.createCollection("collectionNomeDaCollection")</p>
+- <p>db.createCollection("nomeDaCollection")</p>
 
 <p>O comando apresentado agora não deverá ser executado a menos que deseje, de fato, apagar o seu banco de dados. Está sendo apresentado apenas com fins de aprendizagem. TENHA CUIDADO COM ESTE COMANDO!</p> 
 
@@ -83,7 +84,7 @@
 
 - <p>db.dropDatabase() </p>
 
-<p>5. Para mostrar collections :</p>
+<p>5. Para mostrar todas as collections :</p>
 
 - <p>show collections</p>
 
@@ -99,25 +100,29 @@
 
 - <p>quit ()  ou  Ctrl + C</p>
 
-<p>9. Seleciona documentos em uma coleção ou visão e retorna um cursor para os documentos selecionados.</p>
+<p>9. Seleciona todos os documentos em uma coleção e os retorna.</p>
 
-- <p>db.collection.find ()</p>
+- <p>db.nomeDaCollection.find ()</p>
 
-<p>10. Retorna um documento que satisfaz os critérios de consulta especificados na coleção ou visualização . Se vários documentos satisfizerem a consulta, este método retorna o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco. </p>
+<p>10. Comando que retorna um documento que satisfaz os critérios de consulta especificados na coleção. Se vários documentos satisfizerem a consulta, este método retornará o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco, isto, retorna um único registro. </p>
 
-- <p>db.collection.findOne ()</p>
+- <p>db.nomeDaCollection.findOne ()</p>
 
 <p>11. Insere um documento ou documentos em uma coleção.</p>
     
-- <p>db.collection.insert( )</p>
+- <p>db.nomeDaCollection.insert( )</p>
 
-<p>O insert() método possui a seguinte sintaxe : db.collection.insert (
-    nomeDoDocumento
+<p>O insert() método possui a seguinte sintaxe : db.nomeDaCollection.insert (
     {
      " nome " : "Simone",
      " feliz " :  true
     }
 )</p>
+
+<p>Comando para trazer o retorno de uma forma
+mais amigável:</p>
+
+- <p>db.nomeDaCollection.find().pretty()</p>
 
 <br>
 
