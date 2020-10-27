@@ -132,7 +132,7 @@ mais amigável:</p>
 
 <p>14. Comando para incluir vários registros de uma única vez:</p>
 
-- <p></p>
+- <p>db.nomeDaCollection.insertMany( [ { objetos}] )</p>
 
 <p>O insertMany( ) método possui a seguinte sintaxe:</p>
 
