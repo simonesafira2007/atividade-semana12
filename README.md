@@ -60,15 +60,15 @@
 
 ![Terminal executando o comando mongo](./imagens_banco_dados/cmd_mongo.png)
 
-<br>
+<br>  
 
-<p>Estes dois terminais deverão estar abertos simultâneamente .</p>
+<p>Estes dois terminais deverão estar abertos simultâneamente. As imagens mostram o que deverá estar sendo exibido nos prompts de comandos para validar a instalação exitosa.</p>
 
 ### Comandos do MongoDB :
 <br>
 <p>1. Para criação de um Banco de dados:</p> 
 
-- <p>use [nomeDoBancoASerCriado]</p>
+- <p>use [ nomeDoBancoASerCriado ]</p>
 
 <p>2. Para mostrar seus bancos de dados</p>
 
@@ -76,13 +76,13 @@
 
 <p>3. Para criar uma collection :</p>
 
-- <p>db.createCollection("nomeDaCollection")</p>
+- <p>db.createCollection( "nomeDaCollection" )</p>
 
 <p>O comando apresentado agora não deverá ser executado a menos que deseje, de fato, apagar o seu banco de dados. Está sendo apresentado apenas com fins de aprendizagem. TENHA CUIDADO COM ESTE COMANDO!</p> 
 
 <p>4. Para DELETAR todos os bancos :</p>
 
-- <p>db.dropDatabase() </p>
+- <p>db.dropDatabase( ) </p>
 
 <p>5. Para mostrar todas as collections :</p>
 
@@ -92,37 +92,57 @@
 
 - <p>db.nomeDaCollection database</p>
 
-<p>7. Comando que mostra o banco que esta sendo usado no momento :</p>
+<p>7. Comando que mostra o banco que está sendo usado no momento :</p>
 
 - <p>db.current </p>
 
 <p>8. Saia do Shell</p>
 
-- <p>quit ()  ou  Ctrl + C</p>
+- <p>quit ( )  ou  Ctrl + C</p>
 
 <p>9. Seleciona todos os documentos em uma coleção e os retorna.</p>
 
-- <p>db.nomeDaCollection.find ()</p>
+- <p>db.nomeDaCollection.find ( )</p>
 
 <p>10. Comando que retorna um documento que satisfaz os critérios de consulta especificados na coleção. Se vários documentos satisfizerem a consulta, este método retornará o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco, isto, retorna um único registro. </p>
 
-- <p>db.nomeDaCollection.findOne ()</p>
+- <p>db.nomeDaCollection.findOne ( )</p>
 
 <p>11. Insere um documento ou documentos em uma coleção.</p>
     
 - <p>db.nomeDaCollection.insert( )</p>
 
-<p>O insert() método possui a seguinte sintaxe : db.nomeDaCollection.insert (
+<p>O insert( ) método possui a seguinte sintaxe : db.nomeDaCollection.insert (
     {
      " nome " : "Simone",
      " feliz " :  true
     }
 )</p>
 
-<p>Comando para trazer o retorno de uma forma
+<p>12. Comando para trazer o retorno de uma forma
 mais amigável:</p>
 
-- <p>db.nomeDaCollection.find().pretty()</p>
+- <p>db.nomeDaCollection.find( ).pretty( )</p>
+
+<p>13. Comando para incluir um registro dentro de uma collection:</p>
+
+- <p>db.nomeDaCollection.insertOne( {atributos} )</p>
+
+<p>Exemplo : db.nomeDaCollection.insertOne( {  "item" :  "cartão" ,  "qtd" :  15  }  )</p>
+
+<p>14. Comando para incluir vários registros de uma única vez:</p>
+
+- <p></p>
+
+<p>O insertMany( ) método possui a seguinte sintaxe:</p>
+
+<p>db.nomeDaCollection.insertMany ( 
+   [  < documento  1 >  ,  < documento  2 > ,  ...  ], 
+   { 
+      " numero " :  56, 
+      " ordenado " : true 
+   } 
+)</p>
 
 <br>
 
