@@ -113,59 +113,55 @@
 
 <p>4. Para DELETAR todos os bancos :</p>
 
-- <p>db.dropDatabase( ) </p>
+- <p>db.dropDatabase() </p>
 
 <p>5. Para mostrar todas as collections :</p>
 
-- <p>show collections</p>
+- <p>show collections</p>  
 
-<p>6. Exibe registros :</p>
-
-- <p>db.nomeDaCollection database</p>
-
-<p>7. Comando que mostra o banco que está sendo usado no momento :</p>
+<p>6. Comando que mostra o banco que está sendo usado no momento :</p>
 
 - <p>db.current </p>
 
-<p>8. Saia do Shell</p>
+<p>7. Saia do Shell</p>
 
-- <p>quit ( )  ou  Ctrl + C</p>
+- <p>quit ()  ou  Ctrl + C</p>
 
-<p>9. Seleciona todos os documentos em uma coleção e os retorna.</p>
+<p>8. Seleciona todos os documentos em uma coleção e os retorna.</p>
 
-- <p>db.nomeDaCollection.find ( )</p>
+- <p>db.nomeDaCollection.find ()</p>
 
-<p>10. Comando que retorna um documento que satisfaz os critérios de consulta especificados na coleção. Se vários documentos satisfizerem a consulta, este método retornará o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco, isto, retorna um único registro. </p>
+<p>9. Comando que retorna um documento que satisfaz os critérios de consulta especificados na coleção. Se vários documentos satisfizerem a consulta, este método retornará o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco, isto, retorna um único registro. </p>
 
-- <p>db.nomeDaCollection.findOne ( )</p>
+- <p>db.nomeDaCollection.findOne ()</p>
 
-<p>11. Insere um documento ou documentos em uma coleção.</p>
+<p>10. Insere um documento ou documentos em uma coleção.</p>
     
-- <p>db.nomeDaCollection.insert( )</p>
+- <p>db.nomeDaCollection.insert()</p>
 
-<p>O insert( ) método possui a seguinte sintaxe : db.nomeDaCollection.insert (
+<p>O insert() método possui a seguinte sintaxe : db.nomeDaCollection.insert (
     {
      " nome " : "Simone",
      " feliz " :  true
     }
 )</p>
 
-<p>12. Comando para trazer o retorno de uma forma
+<p>11. Comando para trazer o retorno de uma forma
 mais amigável:</p>
 
-- <p>db.nomeDaCollection.find( ).pretty( )</p>
+- <p>db.nomeDaCollection.find().pretty()</p>
 
-<p>13. Comando para incluir um registro dentro de uma collection:</p>
+<p>12. Comando para incluir um registro dentro de uma collection:</p>
 
 - <p>db.nomeDaCollection.insertOne( {atributos} )</p>
 
 <p>Exemplo : db.nomeDaCollection.insertOne( {  "item" :  "cartão" ,  "qtd" :  15  }  )</p>
 
-<p>14. Comando para incluir vários registros de uma única vez:</p>
+<p>13. Comando para incluir vários registros de uma única vez:</p>
 
 - <p>db.nomeDaCollection.insertMany( [ { objetos } ] )</p>
 
-<p>O insertMany( ) método possui a seguinte sintaxe:</p>
+<p>O insertMany() método possui a seguinte sintaxe:</p>
 
 <p>db.nomeDaCollection.insertMany ( 
    [  < documento  1 >  ,  < documento  2 > ,  ...  ], 
