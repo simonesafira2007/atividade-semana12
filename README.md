@@ -95,7 +95,10 @@
 
 <p>Estes dois terminais deverão estar abertos simultâneamente. As imagens mostram o que deverá estar sendo exibido nos prompts de comandos para validar a instalação exitosa.</p>
 
+<br>
+
 ## Comandos do MongoDB :
+
 <br>
 <p>1. Para criação de um Banco de dados:</p> 
 
@@ -188,6 +191,7 @@ mais amigável:</p>
 <br>
 
 ## O atributo _id
+
 <br>
 <p>Todos os documentos de todas as coleções possuem um atributo _id, que é o identificador único de um documento.</p>
 <p>Quando incluímos um documento é possível atribuir um valor para o _id,  se o seu valor não é informado, o MongoDB gera um valor único automaticamente.</p>
