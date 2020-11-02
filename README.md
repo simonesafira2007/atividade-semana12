@@ -99,7 +99,7 @@
 <br>
 <p>1. Para criação de um Banco de dados:</p> 
 
-- <p>use [ nomeDoBancoASerCriado ]</p>
+- <p>use  nomeDoBancoASerCriado </p>
 
 <p>2. Para mostrar seus bancos de dados</p>
 
@@ -109,33 +109,37 @@
 
 - <p>db.createCollection( "nomeDaCollection" )</p>
 
+<p></p>4. Para excluir uma coleção inteira usamos o método drop() :
+
+- <p>db.nomeDaCollection.drop()</p>
+
 <p>O comando apresentado agora não deverá ser executado a menos que deseje, de fato, apagar o seu banco de dados. Está sendo apresentado apenas com fins de aprendizagem. TENHA CUIDADO COM ESTE COMANDO!</p> 
 
-<p>4. Para DELETAR todos os bancos :</p>
+<p>5. Para DELETAR todos os bancos :</p>
 
 - <p>db.dropDatabase() </p>
 
-<p>5. Para mostrar todas as collections :</p>
+<p>6. Para mostrar todas as collections :</p>
 
 - <p>show collections</p>  
 
-<p>6. Comando que mostra o banco que está sendo usado no momento :</p>
+<p>7. Comando que mostra o banco que está sendo usado no momento :</p>
 
 - <p>db.current </p>
 
-<p>7. Saia do Shell</p>
+<p>8. Saia do Shell</p>
 
 - <p>quit ()  ou  Ctrl + C</p>
 
-<p>8. Seleciona todos os documentos em uma coleção e os retorna.</p>
+<p>9. Seleciona todos os documentos em uma coleção e os retorna.</p>
 
 - <p>db.nomeDaCollection.find ()</p>
 
-<p>9. Comando que retorna um documento que satisfaz os critérios de consulta especificados na coleção. Se vários documentos satisfizerem a consulta, este método retornará o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco, isto, retorna um único registro. </p>
+<p>10. Comando que retorna um documento que satisfaz os critérios de consulta especificados na coleção. Se vários documentos satisfizerem a consulta, este método retornará o primeiro documento de acordo com a ordem natural que reflete a ordem dos documentos no disco, isto, retorna um único registro. </p>
 
 - <p>db.nomeDaCollection.findOne ()</p>
 
-<p>10. Insere um documento ou documentos em uma coleção.</p>
+<p>11. Insere um documento ou documentos em uma coleção.</p>
     
 - <p>db.nomeDaCollection.insert()</p>
 
@@ -146,18 +150,18 @@
     }
 )</p>
 
-<p>11. Comando para trazer o retorno de uma forma
+<p>12. Comando para trazer o retorno de uma forma
 mais amigável:</p>
 
 - <p>db.nomeDaCollection.find().pretty()</p>
 
-<p>12. Comando para incluir um registro dentro de uma collection:</p>
+<p>13. Comando para incluir um registro dentro de uma collection:</p>
 
 - <p>db.nomeDaCollection.insertOne( {atributos} )</p>
 
 <p>Exemplo : db.nomeDaCollection.insertOne( {  "item" :  "cartão" ,  "qtd" :  15  }  )</p>
 
-<p>13. Comando para incluir vários registros de uma única vez:</p>
+<p>14. Comando para incluir vários registros de uma única vez:</p>
 
 - <p>db.nomeDaCollection.insertMany( [ { objetos } ] )</p>
 
@@ -171,11 +175,23 @@ mais amigável:</p>
    } 
 )</p>
 
+<p>15. Para verificar a quantidade de documentos em uma coleção</p>
+
+- <p>db.nomeDaCollection.count()</p>
+
 <br>
 
 <p>Para mais informações sobre comandos, consulte a bíblia no link abaixo :</p>
 
 [Manual do MongoDB 4.4]( https://docs.mongodb.com/manual/ )
+
+<br>
+
+## O atributo _id
+<br>
+<p>Todos os documentos de todas as coleções possuem um atributo _id, que é o identificador único de um documento.</p>
+<p>Quando incluímos um documento é possível atribuir um valor para o _id,  se o seu valor não é informado, o MongoDB gera um valor único automaticamente.</p>
+
 
 <br>
 
