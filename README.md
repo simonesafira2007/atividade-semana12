@@ -1,10 +1,10 @@
 ### atividade-semana12
 <br> 
 
-![Imagem ilustrativa banco de dados](./imagens_banco_dados/b-dados.png)
+![Imagem ilustrativa banco de dados](./imagens_banco_dados/bancos-de-dados.jpg)
 
 
-# Banco de dados
+# Banco de dados  
 
 <br>
 
