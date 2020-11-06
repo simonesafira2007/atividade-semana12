@@ -4,7 +4,7 @@
 ![Imagem ilustrativa banco de dados](./imagens_banco_dados/bancos-de-dados.jpg)
 
 
-# Banco de dados  
+# Bancos de dados  
 
 <br>
 
